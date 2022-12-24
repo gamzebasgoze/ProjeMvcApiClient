@@ -1,0 +1,38 @@
+﻿@using ProjeMvcApiClient.Models;
+@model Subeler
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <title></title>
+    <link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/twitter-bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-2">
+        <form asp-action="Add" asp-controller="Subeler" method="post">
+            <div class="form-group">
+                <label>Şube Adı:</label>
+                <input type="text" name="SubeAd" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <label>Depo Id:</label>
+                <input type="text" name="DepoId" class="form-control" />
+            </div>
+            <br />
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Kaydet</button>
+            </div>
+            <div>
+                <div asp-validation-summary="ModelOnly" class="text-danger">
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

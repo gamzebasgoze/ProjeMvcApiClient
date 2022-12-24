@@ -1,0 +1,39 @@
+﻿@using ProjeMvcApiClient.Models;
+@model Depolar
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <title></title>
+    <link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/twitter-bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-2">
+        <form asp-action="Add" asp-controller="Depolar" method="post">
+            <div class="form-group">
+                <label>Depo Adı:</label>
+                <input type="text" name="DepoAdi" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <label>Depo Bölgesi:</label>
+                <input type="text" name="DepoBolge" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Kaydet</button>
+            </div>
+            <br />  
+            <div>
+                <div asp-validation-summary="ModelOnly" class="text-danger">
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

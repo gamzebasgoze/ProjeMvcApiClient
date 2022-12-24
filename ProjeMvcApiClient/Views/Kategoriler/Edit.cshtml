@@ -1,0 +1,30 @@
+﻿@using ProjeMvcApiClient.Models;
+@model Kategoriler
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title></title>
+    <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/twitter-bootstrap/css/bootstrap-grid.css" rel="stylesheet"/>*@
+</head>
+<body>
+    <div class="container mt-2">
+        <form asp-action="Edit" asp-controller="Depolar" method="post">
+            <input type="hidden" asp-for="KategoriId" />
+            <div class="form-group">
+                <label asp-for="KategoriAd">KAtegori Adı :</label>
+                <input asp-for="KategoriAd" type="text" name="KategoriAd" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Yenile</button>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

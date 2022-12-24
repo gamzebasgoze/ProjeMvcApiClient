@@ -1,0 +1,40 @@
+﻿@using ProjeMvcApiClient.Models;
+@model Urunler
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title></title>
+    <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/twitter-bootstrap/css/bootstrap-grid.css" rel="stylesheet"/>*@
+</head>
+<body>
+    <div class="container mt-2">
+        <form asp-action="Edit" asp-controller="Urunler" method="post">
+            <input type="hidden" asp-for="UrunId"/>
+            <div class="form-group">
+                <label asp-for="UrunAdi">Ürün Adı :</label>
+                <input asp-for="UrunAdi" type="text" name="UrunAdi" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <label asp-for="UrunAdeti">Ürün Adeti:</label>
+                <input asp-for="UrunAdeti" type="text" name="UrunAdeti" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <label asp-for="UrunAciklama">Ürün Açıklaması:</label>
+                <input asp-for="UrunAciklama" type="text" name="UrunAciklama" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Yenile</button>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

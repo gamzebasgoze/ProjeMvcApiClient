@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjeMvcApiClient", "ProjeMvcApiClient\ProjeMvcApiClient.csproj", "{F96B0144-88DF-4C5A-8AAE-C01B45301D13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F96B0144-88DF-4C5A-8AAE-C01B45301D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96B0144-88DF-4C5A-8AAE-C01B45301D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96B0144-88DF-4C5A-8AAE-C01B45301D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96B0144-88DF-4C5A-8AAE-C01B45301D13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {051F524F-F8EA-4535-A36E-258750A60AF9}
+	EndGlobalSection
+EndGlobal

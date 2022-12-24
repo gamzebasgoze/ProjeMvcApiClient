@@ -1,0 +1,44 @@
+﻿@using ProjeMvcApiClient.Models;
+@model Personeller
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <title></title>
+    <link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/twitter-bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-2">
+        <form asp-action="Add" asp-controller="Personeller" method="post">
+            <div class="form-group">
+                <label>Personel Adı Soyadı:</label>
+                <input type="text" name="PAdsoyad" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <label>Cinsiyeti:</label>
+                <input type="text" name="PCinsiyet" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <label>Yaşı:</label>
+                <input type="text" name="PYas" class="form-control" />
+            </div>
+            <br />  
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Kaydet</button>
+            </div>
+            
+            <div>
+                <div asp-validation-summary="ModelOnly" class="text-danger">
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
