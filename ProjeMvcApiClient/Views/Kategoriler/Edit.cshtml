@@ -3,7 +3,7 @@
 @{
     Layout = null;
 }
-
+@*Edit sayfası*@
 <html>
 <head>
     <title></title>
@@ -12,10 +12,10 @@
 </head>
 <body>
     <div class="container mt-2">
-        <form asp-action="Edit" asp-controller="Kategoriler" method="post">
+        <form asp-action="Edit" asp-controller="Kategoriler" method="post"> 
             <input type="hidden" asp-for="KategoriId" />
             <div class="form-group">
-                <label asp-for="KategoriAd">KAtegori Adı :</label>
+                <label asp-for="KategoriAd">Kategori Adı :</label>
                 <input asp-for="KategoriAd" type="text" name="KategoriAd" class="form-control" />
             </div>
             <br />  
